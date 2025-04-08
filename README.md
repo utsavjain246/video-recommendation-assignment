@@ -8,7 +8,7 @@ This project implements a video recommendation algorithm that:
 
 - Delivers personalized content recommendations
 - Handles cold start problems using mood-based recommendations
-- Utilizes deep neural networks for content analysis
+- Utilizes Graph/Deep neural networks for content analysis
 - Integrates with external APIs for data collection
 - Implements efficient data caching and pagination
 
@@ -61,7 +61,7 @@ This project implements a video recommendation algorithm that:
 
 ## 📊 API Endpoints
 
-### Main Recommendation Endpoints
+### Recommendation Endpoints Has to Build
 
 1. **Get Personalized Feed**
 
@@ -73,14 +73,14 @@ This project implements a video recommendation algorithm that:
 2. **Get Category-based Feed**
 
    ```
-   GET /feed?username={username}&category_id={category_id}
+   GET /feed?username={username}&project_code={project_code}
    ```
 
    Returns category-specific video recommendations for a user.
 
 ### Data Collection Endpoints (Internal Use)
 
-The system uses the following APIs for data collection:
+APIs for data collection:
 
 ### APIs
 
@@ -127,27 +127,6 @@ Header:
 
 **Note**: All external API calls require the Flic-Token header:
 
-## 🧮 Algorithm Implementation
-
-The recommendation engine uses a Deep Neural Network (DNN) architecture with the following components:
-
-1. **Data Preprocessing**
-
-   - Feature engineering
-   - Data normalization
-   - Missing value handling
-   - Categorical encoding
-2. **Model Architecture**
-
-   - Embedding layers for categorical features
-   - Dense layers with ReLU activation
-   - Dropout for regularization
-   - Output layer with appropriate activation
-3. **Cold Start Handling**
-
-   - Mood-based initial recommendations
-   - Content-based filtering fallback
-   - Popularity-based recommendations
 
 ## 📝 Submission Requirements
 
@@ -165,7 +144,7 @@ The recommendation engine uses a Deep Neural Network (DNN) architecture with the
    - Technical Demo
      - API demonstration using Postman
      - Database operations
-     - Authentication flow
+       
 3. **Notification**
 
    - Join the Telegram group: [Video Recommendation](https://t.me/+VljbLT8o75QxN2I9)
