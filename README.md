@@ -26,21 +26,23 @@ This project implements a video recommendation algorithm that:
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Tim-Alpha/video-recommendation-assignment.git
+   ```
+   ```bash
    cd video-recommendation-engine
    ```
-2. **Set Up Virtual Environment**
+1. **Set Up Virtual Environment**
 
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-3. **Install Dependencies**
+2. **Install Dependencies**
 
    ```bash
    pip install -r requirements.txt
    ```
-4. **Configure Environment Variables**
+3. **Configure Environment Variables**
    Create a `.env` file in the root directory:
 
    ```env
@@ -48,12 +50,12 @@ This project implements a video recommendation algorithm that:
    FLIC_TOKEN=your_flic_token
    API_BASE_URL=https://api.socialverseapp.com
    ```
-5. **Run Database Migrations**
+4. **Run Database Migrations**
 
    ```bash
    alembic upgrade head
    ```
-6. **Start the Server**
+5. **Start the Server**
 
    ```bash
    uvicorn app.main:app --reload
@@ -131,20 +133,17 @@ Header:
 ## 📝 Submission Requirements
 
 1. **GitHub Repository**
-
-   - Complete source code
-   - This README.md file
-   - Postman collection
-   - Database migration scripts
+   - Submit a merge request from your fork or cloned repository.
+   - Include a complete Postman collection demonstrating your API endpoints.
+   - Add a docs folder explaining how your recommendation system works.
 2. **Video Submission**
+   - Introduction Video (30–40 seconds)
+     - A short personal introduction (with face-cam).
+   - Technical Demo (3–5 minutes)
+     - Live demonstration of the APIs using Postman.
+     - Brief overview of the project.
+       Video Submission
 
-   - Introduction Video (30-40 seconds)
-     - Personal introduction
-     - Project overview
-   - Technical Demo
-     - API demonstration using Postman
-     - Database operations
-       
 3. **Notification**
 
    - Join the Telegram group: [Video Recommendation](https://t.me/+VljbLT8o75QxN2I9)
