@@ -1,0 +1,24 @@
+# docker-compose.yml
+# This file sets up a PostgreSQL database service using Docker.
+# Run `docker-compose up -d` to start it.
+
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-alpine
+    container_name: video-rec-db
+    environment:
+      # These credentials MUST match the DATABASE_URL in your app/models.py
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=video_recommendations
+    ports:
+      # Exposes the database on port 5432 of your local machine
+      - "5432:5432"
+    volumes:
+      # Persists database data across container restarts
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:

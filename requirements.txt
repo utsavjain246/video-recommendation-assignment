@@ -5,3 +5,8 @@ python-dotenv
 sentence-transformers
 scikit-learn
 numpy
+sqlalchemy
+psycopg2-binary
+alembic
+torch
+scipy
